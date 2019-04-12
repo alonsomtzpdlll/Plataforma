@@ -1,0 +1,45 @@
+body {
+    background:#203063;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #203063,#203063);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #203063, #203063); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ bottom: blue;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h3{
+    color: rgb(0, 0, 0);
+}
+  
+  .navbar {
+    height: 8%;
+  }
+  .card .card-block {max-width:150px;overflow:auto;}
+  
+  .dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu> a:after {
+    float: right;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+.card {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+}
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}

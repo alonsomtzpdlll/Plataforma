@@ -1,0 +1,28 @@
+<div class="container">
+
+    <h1>{{Alum.name}}</h1>
+    
+    {{#each Preg}}
+    <form action="/user/examen/derecho8/{{_id}}" method="POST">
+        <div class="jumbotron">
+
+            <h2>{{materia}}</h2>
+            <h3>{{Pregunta}}</h3>
+
+            <ul class="alternativas">
+                <li> <label> <input type="radio" name="newradio1">{{Respuesta1}}</label> </li>
+                <li> <label> <input type="radio" name="newradio2">{{Respuesta2}}</label> </li>
+                <li> <label> <input type="radio" name="newradio3">{{Respuesta3}}</label> </li>
+                <li> <label> <input type="radio" name="newradio4">{{Respuesta4}}</label> </li>
+            </ul>
+                                                
+        </div>
+         <button class="btn btn-info" type="submit" name="responder" >
+            Responder 
+        </button>
+    </form>
+        {{/each}}
+
+       <a class="btn btn-info" type="submit" href="/menu/resultados">fin </a>
+<p></p>
+</div>

@@ -1,0 +1,54 @@
+<div class="col-md-10 mx-auto">
+  <div class="card">
+    <div class="card-header bg-dark text-white">
+      <h3>Edición de exámen</h3>
+    </div>
+    <div class="card-body">
+      <form action="/exam/examen-edit/{{exam._id}}?_method=PUT" method="POST">
+        <!-- metodo pa' actualizar -->
+        <input type="hidden" name="_method" value="PUT">
+        <br>
+        <p>Formule su pregunta, y sus respectivas respuestas, despúes seleccione la respuesta correcta</p>
+        <br>
+        <p>Pregunta</p>
+        <div class="form-group">
+          <textarea type="textarea" name="Pregunta" class="form-control" placeholder="Pregunta  ">{{exam.Pregunta}}</textarea>
+        </div>
+        <hr class="my-4 bg-primary">
+        <div class="form-group">
+          <p>Respuesta #1</p>
+          <input type="text" name="Respuesta1" class="form-control" placeholder="Respuesta 1 " value="{{exam.Respuesta1}}"><input type="radio" name="radio1" placeholder="on">
+        </div>
+        <p>Respuesta #2</p>
+        <div class="form-group">
+          <input type="text" name="Respuesta2" class="form-control" placeholder="Respuesta 2" value="{{exam.Respuesta2}}"><input type="radio" name="radio2">
+        </div>
+        <p>Respuesta #3</p>
+        <div class="form-group">
+          <input type="text" name="Respuesta3" class="form-control" placeholder="Respuesta 3" value="{{exam.Respuesta3}}"><input type="radio" name="radio3">
+        </div>
+        <p>Respuesta #4</p>
+        <div class="form-group">
+          <input type="text" name="Respuesta4" class="form-control" placeholder="Respuesta 4" value="{{exam.Respuesta4}}"><input type="radio" name="radio4">
+        </div>
+
+        <div class="form-group">
+          <button class="btn btn-primary btn-block" type="submit">
+            enviar
+          </button>
+        </div>
+
+
+      </form>
+    </div>
+  </div>
+  </dir>
+</div>
+
+
+
+
+</div>
+</form>
+</div>
+</div>

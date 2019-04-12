@@ -1,0 +1,62 @@
+<div class="container">
+  <h1>Bienvenido {{Alum.name}}</h1>
+  <h2>Derecho 5to</h2>
+  <div class="jumbotron mt-4 bg-light">
+    <h1 class="display-4 text-center"></h1>
+    
+  <br>
+  
+    {{#if calif}}
+<div class="card-deck">
+    <div class="card text-center" >
+    <div class="card-body text-center">
+      <p class="card-text">Exámenes</p>
+       <!-- Aqui va todo mai friend -->
+       <ul class="list-group">
+           <a href="#" class="btn btn-success btn-lg  disabled" tabindex="-1" role="button" aria-disabled="true">Resolver exámen</a>
+            <br> 
+        </ul>
+    </div>
+    </div>
+  
+  <div class="card text-center ">
+    <div class="card-body text-center">
+      <div class="card mx-auto border-dark mb-3">
+        <div class="card-header"> Calificaciones </div>
+        <ul class="list-group list-group-flush">
+           <li class="list-group-item">aciertos/ total ----------- promedio final</li>
+          {{#each calif}}
+          <li class="list-group-item">  {{aciertos}}/{{preguntas_total}} ------------- {{prom}} </li>
+          {{/each}}
+          <h2>{{calif.prom}}</h2>
+      </div>
+    </div>
+  </div>
+  {{else}}
+  <div class="card-deck">
+    <div class="card text-center" >
+    <div class="card-body text-center">
+      <p class="card-text">Exámenes</p>
+       <!-- Aqui va todo mai friend -->
+       <ul class="list-group">
+            <a href="/user/examen/derecho8" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Resolver exámen</a>
+            <br> 
+        </ul>
+    </div>
+    </div>
+    <div class="card text-center ">
+    <div class="card-body text-center">
+      <div class="card mx-auto border-dark mb-3">
+        <div class="card-header"> Calificaciones </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Aún no hay calificaciones</li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  {{/if}}
+  </div>
+  </div>
+  </div>
+  </form>

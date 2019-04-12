@@ -1,0 +1,126 @@
+<dir class="col-md-10 mx-auto">
+
+    <div class="card">
+        <div class="card-header">
+            <h3>Nuevo examen</h3>
+        </div>
+        <div class="card-body">
+
+            <form action="/new" method="POST">
+                <!-- METODO POST -->
+              <label for="exampleFormControlSelect1">seleccione la carrera</label>
+                    <select class="form-control" name="carrera" aria-placeholder="Carrera">
+                        <option>Derecho 5to</option>
+                        <option>Derecho 8vo</option>
+                        <option>Administración 5to</option>
+                        <option>Administración 8vo</option>
+                        <option>Pedagogía 5to</option>
+                        <option>Pedagogía 8vo</option>
+                        <option>Turismo 2do</option>
+                        <option>Turismo 5to</option>
+                        <option>Turismo 8vo</option>
+                        <option>Ing. en Sistemas 2do</option>
+                        <option>Contaduría 2do</option>
+                        <option>Contaduría 5to</option>
+                        <option>Contaduría 8vo</option>
+                    </select>
+                    <label for="exampleFormControlSelect1">seleccione la materia</label>
+                    <select class="form-control" name="materia" aria-placeholder="Carrera">
+                        <option>Calculo II</option><!--Sis2-->
+                        <option>Algebra II</option>
+                        <option>Fisica II</option>
+                        <option>Algoritmos</option>
+                        <option>Matematicas Discretas</option>
+                        <option>Administracion II</option>
+                        <option>Estadistica</option><!--Cont2do--->
+                        <option>Matematicas Administrativas</option>
+                        <option>Comunicacion Oral y Escrita</option>
+                        <option>Derecho constitucional y administrativo</option>
+                        <option>Fundamentos de la contabilidad II</option>
+                        <option>Proceso administrativo</option>
+                        <option>Matematicas Financieras</option><!--Cont2Fin-->
+                        <option>Informatica Aplicada</option><!--Cont5-->
+                        <option>Comercio Intenacional I</option>
+                        <option>Derecho laboral II</option>
+                        <option>Presupuestos</option>
+                        <option>contabilidad Financiera</option>
+                        <option>Mercado, Dinero y Capitales</option><!--cont5fin-->
+                        <option>Auditoria I</option><!--cont8-->
+                        <option>Administracion Financiera</option>
+                        <option>Riesgo Financiero</option>
+                        <option>Impuestos I</option>
+                        <option>Finanzas publicas</option>
+                        <option>Formulacion de Evaluacion de proyectos de inversion</option><!--cont8fin-->
+                        <option>Historia del derecho mexicano</option><!--der5-->
+                        <option>Derecho Romano II</option>
+                        <option>Personas y Familia</option>
+                        <option>Derecho constitucional I</option>
+                        <option>Lexicologia Juridica</option>
+                        <option>Metodologia Juridica</option><!--der5fin-->
+                        <option>Didactica II</option><!--ped5-->
+                        <option>Desarrollo en la adolecencia I</option>
+                        <option>Epistemologia</option>
+                        <option>Psicopedologia</option>
+                        <option>Diseño de planes y programas de Estudio</option>
+                        <option>Comunicacion Educativa</option><!--ped5fin-->
+                        <option>Administracion Educativa II</option><!--ped8-->
+                        <option>Psicologia del Adulto Mayor</option>
+                        <option>Orientacion Educativa, Vocacional y Profecional I</option>
+                        <option>Capacitacion I</option>
+                        <option>Politica y Legislacion Educativa</option>
+                        <option>Computacion Aplicada a la Educacion</option><!--ped8fin-->
+                        <option>Operacion de alimentos y bebidas I</option><!--Tur2-->
+                        <option>Matematicas Administrativas</option>
+                        <option>Geografia y Patrimonio turistico de México</option>
+                        <option>Sociologia del Turismo</option>
+                        <option>Fundamentos de la contabilidad II</option>
+                        <option>Ingles II</option><!--tur2fin-->
+                        <option>Tecnologia del hospedaje II</option><!--tur5-->
+                        <option>Control de costo de alimentos y bebidas</option>
+                        <option>Administracion de Recursos Humanos</option>
+                        <option>Macroeconomia</option>
+                        <option>Derecho Mercantil</option>
+                        <option>Ingles V</option><!--tur5fin-->
+                        <option>Planeacion del Desarrollo Turistico</option><!--tur8-->
+                        <option>Organizacion de Congresos y convenciones</option>
+                        <option>Relaciones publicas</option>
+                        <option>proyectos de Desarrollo turistico</option>
+                        <option>Mercadotecnia Turistica II</option>
+                        <option>Frances I</option><!--tur8fin-->
+                    </select>
+                <br>
+                <br>
+                
+                <div class="form-group">
+                    <textarea name="Pregunta" class="form-control" placeholder="Pregunta"></textarea>
+                </div>
+                <hr class="my-4 bg-primary">
+                <div class="form-group">
+                    <input type="text" name="Respuesta1" class="form-control" placeholder="Respuesta 1">
+                    <input type="radio" name="radio1" value="on">correcta
+                </div>
+
+                <div class="form-group">
+                    <input type="text" name="Respuesta2" class="form-control" placeholder="Respuesta 2">
+                    <input type="radio" name="radio2" value="on">correcta
+                </div>
+
+                <div class="form-group">
+                    <input type="text" name="Respuesta3" class="form-control" placeholder="Respuesta 3">
+                    <input type="radio" name="radio3" value="on">correcta
+                </div>
+
+                <div class="form-group">
+                    <input type="text" name="Respuesta4" class="form-control" placeholder="Respuesta 4">
+                    <input type="radio" name="radio4" value="on">correcta
+                </div>
+
+                <div class="form-group">
+                    <button class="btn btn-primary btn-block" type="submit">
+                        enviar
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</dir>

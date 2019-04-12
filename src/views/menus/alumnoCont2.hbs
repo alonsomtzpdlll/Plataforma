@@ -1,0 +1,54 @@
+<div class="container">
+  <h1>Bienvenido {{Alum.name}}</h1>
+  <h2>Derecho 5to</h2>
+  <div class="jumbotron mt-4 bg-light">
+    <h1 class="display-4 text-center"></h1>
+    
+  <br>
+  
+    
+<div class="card-deck">
+    <div class="card text-center" >
+    <div class="card-body text-center">
+      <p class="card-text">Exámenes</p>
+       <!-- Aqui va todo mai friend -->
+       <ul class="list-group">
+            <a href="/user/examen/Contaduria2" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Resolver exámen</a>
+            <br> 
+        </ul>
+    </div>
+    </div>
+  {{#if calificaciones}}
+  <div class="card text-center ">
+    <div class="card-body text-center">
+      <div class="card mx-auto border-dark mb-3">
+        <div class="card-header"> Calificaciones </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Materia ------- 00/10</li>
+          <li class="list-group-item">Materia ------- 00/10</li>
+          <li class="list-group-item">Materia ------- 00/10</li>
+          <li class="list-group-item">Materia ------- 00/10</li>
+          <li class="list-group-item">Materia ------- 00/10</li>
+          <li class="list-group-item">Materia ------- 00/10</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  {{else}}
+    <div class="card text-center ">
+    <div class="card-body text-center">
+      <div class="card mx-auto border-dark mb-3">
+        <div class="card-header"> Calificaciones </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Aún no hay calificaciones</li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  {{/if}}
+  </div>
+  </div>
+  <a class="btn btn-danger text-center " href="/users/logout" role="button">Cerrar sesión</a>
+  </div>
+  </form>

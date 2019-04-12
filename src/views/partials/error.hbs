@@ -1,0 +1,22 @@
+
+<!-- por si nos manda error en el loggin-->
+{{#if error}}
+<div class="alert alert-danger alert-dismissible fade show" role="alert">
+    {{error}}
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
+{{/if}}
+<!-- For each para darle vueltas a todo el pedo krnal -->
+{{#each error}}
+<div class="alert alert-danger alert-dismissible fade show" role="alert">
+    {{text}}
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+{{/each}}
+
+<!--aqui se cierra el for each krnl -->

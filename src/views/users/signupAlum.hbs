@@ -1,0 +1,51 @@
+<div class="row">
+    <div class="col-md-4 mx-auto">
+        <div class="card">
+            <div class="card-header">
+                Registro Alumnos
+            </div>
+            <div class="card-body">
+                <form action="/user/signupAlumnos" method="POST">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="name" placeholder="Nombre">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="email" placeholder="Example@correo.com">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="matricula" placeholder="Matricula">
+                    </div>
+                    <label for="exampleFormControlSelect1">seleccione la carrera</label>
+                    <select class="form-control" name="carrera" aria-placeholder="Carrera">
+                        <option>Derecho 5to</option>
+                        <option>Derecho 8vo</option>
+                        <option>Administración 5to</option>
+                        <option>Administración 8vo</option>
+                        <option>Pedagogía 5to</option>
+                        <option>Pedagogía 8vo</option>
+                        <option>Turismo 2do</option>
+                        <option>Turismo 5to</option>
+                        <option>Turismo 8vo</option>
+                        <option>Ing. en Sistemas 2do</option>
+                        <option>Contaduría 2do</option>
+                        <option>Contaduría 5to</option>
+                        <option>Contaduría 8vo</option>
+                    </select>
+            <p></p>
+            <div class="form-group">
+                <input type="password" class="form-control" name="password" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" name="confirm_password" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block">
+                    SignUp
+                </button>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+</div>

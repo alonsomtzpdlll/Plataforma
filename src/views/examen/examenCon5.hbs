@@ -1,0 +1,35 @@
+<div class="container">
+    <h1>{{Alum.name}}</h1>
+    {{#each Preg}}
+    <div class="jumbotron">
+        <form action="/user/signinAlumnos/{{exam._id}}?_method=PUT" method="POST">
+        <input type="hidden" name="_method" value="PUT">
+            <h2>{{materia}}</h2>
+            <h3>{{Pregunta}}</h3>
+            <ul class="alternativas">
+                <li> <label> <input id="Hola" type="radio" name="newradio1">{{Respuesta1}}</label> </li>
+                <li> <label> <input id="Hol1a" type="radio" name="newradio2">{{Respuesta2}}</label> </li>
+                <li> <label> <input id="Holas" type="radio" name="newradio3">{{Respuesta3}}</label> </li>
+                <li> <label> <input id="Holaa" type="radio" name="newradio4">{{Respuesta4}}</label> </li>
+            </ul>
+    </div>
+</div>
+<a class="btn btn-info" type="submit" href="/user/examen/Contaduria2">Responder </a>
+<p></p>
+</div>
+{{/each}}
+
+<div class="carousel-item ">
+    <h1 class="text-center"> Tu calificación es del 73.49%</h1>
+</div>
+</div>
+
+</div>
+<script>
+    $("#myCarousel").carousel({ wrap: false });
+    $('#myCarousel').hover(function () {
+        $(this).carousel('pause')
+    });
+</script>
+
+</body>

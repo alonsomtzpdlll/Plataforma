@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="jumbotron ">
+
+    <h1 class="display-4">Listas de calificaciones</h1>
+    <p></p>
+    <table class="table ">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Alumno:</th>
+          <!--columnas-->
+          <th scope="col">Aciertos:</th>
+          <!--columnas-->
+          <th scope="col">Preguntas:</th>
+          <th scope="col">Calificación:</th>
+        </tr>
+      </thead>
+      
+      {{#each Alumn}}
+      
+      <tbody>
+        <tr>
+          
+          <!--renglones-->
+          <td>{{name}}</td>
+          <td>{{aciertos}}</td>
+        </tr>
+        <tr>
+        {{/each}}
+         
+        </tr>
+      </tbody>
+    </table>
+    <p></p>
+  </div>
+</div>

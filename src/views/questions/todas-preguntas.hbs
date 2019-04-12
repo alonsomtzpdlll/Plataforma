@@ -1,0 +1,45 @@
+<!-- PARA VISUALIZAR TODOS LOS EXAMENES -->
+
+<div class="container">
+    <h1><a href="/exam/new-exam"><i class="fas fa-plus-square  " ></i></a></h1>
+    <div class="row">
+
+<p></p>
+        {{#each Preg}}
+        <div class="col-md-3">
+
+            <div class="card">
+                <div class="card-body">
+                    
+                    <h4 class="card-tittle d-flex justify-content-between aling-items-center ">
+                        {{Pregunta}} <a href="/exam/edit/{{_id}}"><i class="fas fa-edit"></i></a>
+                    </h4>
+
+                    <p>Creado: {{Date}}</p>
+
+                    <form action="/exam/delete/{{_id}}?_method=DELETE" method="POST">
+                    <input type="hidden" name="_method" value="DELETE">
+                    <button class="btn btn-danger btn-block btn-sm" type="submit">
+                        Borrar
+                    </button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+
+        {{else}}
+        <p></p>
+        <div class="card mx-auto">
+            <div class="card-body">
+                <h1>¡Hola! {{user.name}}</h1>
+                <p class="lead"> No se han creado exámenes.</p>
+                <a href="/exam/new-exam" class=" btn btn-success btn-block"> Crear un exámen ahora</a>
+            </div>
+        </div>
+ 
+        {{/each}} 
+        <p></p>
+    </div>
+</div>

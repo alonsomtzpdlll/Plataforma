@@ -1,0 +1,47 @@
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Inicio <span class="sr-only">(current)</span></a>
+
+            </li>
+              <a class="nav-link" href="/">Cerrar Sesion<span class="sr-only">(current)</span></a>
+          </ul>
+
+        </div>
+      </nav>
+<div class="conteiner" >
+    <br>
+  <div class="card-deck">
+    <div class="card ">
+      <div class="card-body text-center">
+        <div class="card-header">
+         <h3 class="card-heading simple ">Navegación de profesores</h3>
+      </div>
+       <p>
+        <ul class="list-group">
+            <a href="/new" class="list-group-item list-group-item-action list-group-item-light">Ver exàmenes {{user.name}}</a>
+            <br>
+            <a href="/exam/new-exam" class="list-group-item list-group-item-action list-group-item-light">Crear exàmen</a>
+            <br>
+          </ul>
+          </p>
+      </div>
+    </div>
+      <div class="card text-center"  >
+              <div class="card-body" style="">
+                <div class="card-header">
+                <h3 class="card-heading simple ">Estadisticas de evaluación</h3>
+                </div>
+                <br>
+                <p>Promedios,estadisticas y analiticas.</p>
+                <ul class="list-group">
+                <a href="/profesor/calificaciones" class="list-group-item list-group-item-action list-group-item-light">Ingresar</a>
+                <br>
+                </ul>
+                        </div>
+                      </div>
+                  <br>
+                  
+              </div> <p></p><a class="btn btn-danger text-center " href="/users/logout" role="button">Cerrar sesión</a>
+</div>
