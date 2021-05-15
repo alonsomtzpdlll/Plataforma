@@ -79,7 +79,7 @@ rutas.post('/user/examen/derecho88',isAuthenticated, async (req, res) => {
 });
 });
 
-//RECIVIR DATOS DEL NUEVO EXAMEN
+//RECIBIR DATOS DEL NUEVO EXAMEN
 rutas.post('/new', isAuthenticated, async (req, res) => { //ponemos async para que no se quede en el proceso
     const {
         carrera,
